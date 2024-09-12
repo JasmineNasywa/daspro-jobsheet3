@@ -19,10 +19,12 @@ public class Kafe13 {
 
         double totalHarga = (jmlKopi * hargaKopi ) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
         double nominalBayar = totalHarga - (diskon * totalHarga);
+        int nominalInt = (int) nominalBayar;
 
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + "kopi" + jmlTeh + "Teh" + jmlRoti + "Roti");
         System.out.println("Nominal bayar Rp." + nominalBayar);
+        System.out.println(nominalInt);
 
 
     }
